@@ -21,11 +21,8 @@
 html,
 body {
   overflow-x: hidden;
-
-  overflow-x: hidden;
-  /* Disable horizontal scrolling */
-  width: 100vw;
-  /* Ensure the width doesn't exceed the viewport width */
+  /* width: 100vw;
+  Ensure the width doesn't exceed the viewport width */
   touch-action: pan-y;
   /* Prevents horizontal scroll on touch devices */
 
