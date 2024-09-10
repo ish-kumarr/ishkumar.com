@@ -17,28 +17,28 @@ export const HeroSection = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
 
-        <HeroOrbit rotation={-14} size={430} shouldOrbit orbitDuration="27s">
+        <HeroOrbit rotation={-14} size={430} shouldOrbit orbitDuration="27s" shouldSpin spinDuration="4s">
           <SparkleIcon className="size-8 text-emerald-300/20" />
         </ HeroOrbit>
-        <HeroOrbit rotation={79} size={440} shouldOrbit orbitDuration="32s">
+        <HeroOrbit rotation={79} size={440} shouldOrbit orbitDuration="32s" shouldSpin spinDuration="3s">
           <SparkleIcon className="size-5 text-emerald-300/20" />
         </ HeroOrbit>
         <HeroOrbit rotation={-41} size={520} shouldOrbit orbitDuration="35s">
           <div className="size-2 rounded-full bg-emerald-300/20" />
         </ HeroOrbit>
-        <HeroOrbit rotation={178} size={530} shouldOrbit orbitDuration="38s">
+        <HeroOrbit rotation={178} size={530} shouldOrbit orbitDuration="38s" shouldSpin spinDuration="4s">
           <SparkleIcon className="size-10 text-emerald-300/20" />
         </ HeroOrbit>
-        <HeroOrbit rotation={20} size={550} shouldOrbit orbitDuration="40s">
+        <HeroOrbit rotation={20} size={550} shouldOrbit orbitDuration="40s" shouldSpin spinDuration="7s">
           <StarIcon className="size-12 text-emerald-300" />
         </ HeroOrbit>
-        <HeroOrbit rotation={98} size={590} shouldOrbit orbitDuration="42s">
+        <HeroOrbit rotation={98} size={590} shouldOrbit orbitDuration="42s" shouldSpin spinDuration="6s">
           <StarIcon className="size-8 text-emerald-300" />
         </ HeroOrbit>
         <HeroOrbit rotation={-5} size={650} shouldOrbit orbitDuration="44s">
           <div className="size-2 rounded-full bg-emerald-300/20" />
         </ HeroOrbit>
-        <HeroOrbit rotation={144} size={710} shouldOrbit orbitDuration="46s">
+        <HeroOrbit rotation={144} size={710} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="4s">
           <SparkleIcon className="size-14 text-emerald-300/20" />
         </ HeroOrbit>
         <HeroOrbit rotation={88} size={720} shouldOrbit orbitDuration="48s">
