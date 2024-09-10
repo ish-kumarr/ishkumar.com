@@ -35,13 +35,13 @@ export const HeroSection = () => {
         <HeroOrbit rotation={98} size={590} shouldOrbit orbitDuration="42s">
           <StarIcon className="size-8 text-emerald-300" />
         </ HeroOrbit>
-        <HeroOrbit rotation={-5} size={650}>
+        <HeroOrbit rotation={-5} size={650} shouldOrbit orbitDuration="44s">
           <div className="size-2 rounded-full bg-emerald-300/20" />
         </ HeroOrbit>
-        <HeroOrbit rotation={144} size={710}>
+        <HeroOrbit rotation={144} size={710} shouldOrbit orbitDuration="46s">
           <SparkleIcon className="size-14 text-emerald-300/20" />
         </ HeroOrbit>
-        <HeroOrbit rotation={88} size={720}>
+        <HeroOrbit rotation={88} size={720} >
           <div className="size-3 rounded-full bg-emerald-300/20" />
         </ HeroOrbit>
         <HeroOrbit rotation={-72} size={800}>
@@ -63,9 +63,9 @@ export const HeroSection = () => {
         </div>
 
         <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">Hi, I'm Ish Kumar</h1>
+          <h1 className="font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl">Hi, I&apos;m Ish Kumar</h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I specialize in transforming designs into functional, high performing web applications. Let's discuss your next project.
+            I specialize in transforming designs into functional, high performing web applications. Let&apos;s discuss your next project.
           </p>
         </div>
         <div className="flex flex-col items-center mt-8 gap-4 md:flex-row justify-center">
@@ -76,7 +76,7 @@ export const HeroSection = () => {
 
           <button className="inline-flex items-center gap-2 border bg-white border-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
-            <span className="font-semibold">Let's Connect</span>
+            <span className="font-semibold">Let&apos;s Connect</span>
           </button>
         </div>
       </div>
