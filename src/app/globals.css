@@ -56,3 +56,12 @@ body {
     @apply max-w-5xl;
   }
 }
+
+/* globals.css */
+
+.sticky-card {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;  
+}
+

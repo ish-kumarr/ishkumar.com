@@ -58,7 +58,7 @@ export const ProjectsSection = () => {
       <div className="flex flex-col mt-10 gap-20 md:mt-20">
         {portfolioProjects.map((project) => (
 
-          <Card key={project.title} className="px-8 pb-0 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-0">
+          <Card key={project.title} className="px-8 pb-0 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky-card sticky top-0">
             
 
             <div className="lg:grid lg:grid-cols-2 lg:gap-16">

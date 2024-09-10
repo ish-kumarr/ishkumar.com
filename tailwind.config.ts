@@ -27,6 +27,7 @@ const config: Config = {
       },
       animation: {
         'ping-large': "ping-large 1.5s ease-in-out infinite",
+        'move-left': "move-left 1s linear infinite",
       },
 
       keyframes:{
@@ -34,6 +35,10 @@ const config: Config = {
           '75%,100%':{
           transform: 'scale(2.6)',opacity: '0'
           }
+        },
+        'move-left':{
+          '0%':{transform: 'translateX(0)'},
+          '100%':{transform: 'translateX(-100%)'}
         }
       }
     },
