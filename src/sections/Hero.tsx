@@ -17,7 +17,37 @@ export const HeroSection = () => {
         <div className="size-[820px] hero-ring"></div>
         <div className="size-[1020px] hero-ring"></div>
 
-      
+        <HeroOrbit rotation={-14} size={430} shouldOrbit orbitDuration="27s">
+          <SparkleIcon className="size-8 text-emerald-300/20" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={79} size={440} shouldOrbit orbitDuration="32s">
+          <SparkleIcon className="size-5 text-emerald-300/20" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={-41} size={520} shouldOrbit orbitDuration="35s">
+          <div className="size-2 rounded-full bg-emerald-300/20" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={178} size={530} shouldOrbit orbitDuration="38s">
+          <SparkleIcon className="size-10 text-emerald-300/20" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={20} size={550} shouldOrbit orbitDuration="40s">
+          <StarIcon className="size-12 text-emerald-300" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={98} size={590} shouldOrbit orbitDuration="42s">
+          <StarIcon className="size-8 text-emerald-300" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={-5} size={650} shouldOrbit orbitDuration="44s">
+          <div className="size-2 rounded-full bg-emerald-300/20" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={144} size={710} shouldOrbit orbitDuration="46s">
+          <SparkleIcon className="size-14 text-emerald-300/20" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={88} size={720} >
+          <div className="size-3 rounded-full bg-emerald-300/20" />
+        </ HeroOrbit>
+        <HeroOrbit rotation={-72} size={800}>
+          <StarIcon className="size-28 text-emerald-300" />
+        </ HeroOrbit>
+
       </div>
 
       <div className="container py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
