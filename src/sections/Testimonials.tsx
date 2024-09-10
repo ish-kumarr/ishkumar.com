@@ -8,39 +8,42 @@ import GrainImage from "@/assets/images/grain.jpg";
 
 import Image from "next/image";
 import { Card } from "./Card";
+import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Alex Turner",
-    position: "Marketing Manager @ TechStartups",
-    text: "Alex was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar1,
+    name: "Ajay Sharma",
+    position: "Owner @ Sharma's Cafe",
+    text: "Ish Kumar did an outstanding job creating an online presence for my cafe. The website he developed is vibrant and perfectly reflects the ambiance of our café. We've seen a noticeable increase in foot traffic since its launch. Highly recommended!",
+    avatar: memojiAvatar1, // Replace with Ajay Sharma's avatar if available
   },
   {
-    name: "Olivia Green",
-    position: "Head of Design @ GreenLeaf",
-    text: "Working with Alex was a pleasure. His expertise in frontend development brought our designs to life in a way we never imagined. The website has exceeded our expectations.",
-    avatar: memojiAvatar2,
+    name: "Priya Patel",
+    position: "Creative Director @ DesignStudio",
+    text: "Working with Ish was a fantastic experience. His skills in frontend development and attention to detail brought our design vision to life. The results have surpassed our expectations, and our clients are thrilled with the new look.",
+    avatar: memojiAvatar2, // Replace with Priya Patel's avatar if available
   },
   {
-    name: "Daniel White",
-    position: "CEO @ InnovateCo",
-    text: "Alex's ability to create seamless user experiences is unmatched. Our website has seen a significant increase in conversions since launching the new design. We couldn't be happier.",
-    avatar: memojiAvatar3,
+    name: "Jatin Sharma",
+    position: "Owner @ Orizzel India Pvt Limited",
+    text: "Ish Kumar developed Ozzy, an AI-assisted chatbot for Orizzel, which has been a game-changer for our food ordering process. The chatbot has significantly improved user interaction and streamlined orders. Ish's innovative approach and technical expertise have been invaluable.",
+    avatar: memojiAvatar3, // Replace with Jatin Sharma's avatar if available
   },
   {
-    name: "Emily Carter",
-    position: "Product Manager @ GlobalTech",
-    text: "Alex is a true frontend wizard. He took our complex product and transformed it into an intuitive and engaging user interface. We're already seeing positive feedback from our customers.",
-    avatar: memojiAvatar4,
+    name: "Neha Desai",
+    position: "Product Lead @ GlobalTech",
+    text: "Ish is a master of frontend development. He took our complex product requirements and transformed them into a user-friendly and engaging interface. The positive feedback from our users has been overwhelming.",
+    avatar: memojiAvatar4, // Replace with Neha Desai's avatar if available
   },
   {
-    name: "Michael Brown",
-    position: "Director of IT @ MegaCorp",
-    text: "Alex's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar5,
+    name: "Future Star Client",
+    position: "Success Story Maker",
+    text: "I’m absolutely sure that the next glowing testimonial will come from you! Let’s team up and make your success the next big highlight everyone will be talking about!",
+    avatar: memojiAvatar5, // Replace with your avatar or a placeholder
   },
+
 ];
+
 
 export const TestimonialsSection = () => {
   return (
@@ -48,23 +51,28 @@ export const TestimonialsSection = () => {
       <div className="container">
 
         <SectionHeader eyebrow="Happy Clients" title="What Clients Say About Me" description="Don't just take my word for it. See what my clients have to say about my work." />
-        <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex gap-8 flex-none">
-          {testimonials.map(testimonial => (
-            <Card key={testimonial.name} className="max-w-xs md:p-8 p-6 md:max-w-md">
-              <div className="flex gap-4 items-center">
-                <div className="size-14 bg-gray-700 inline-flex rounded-full flex-shrink-0 justify-center items-center">
-                <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
-                </div>
-                <div>
-                  <div className="font-semibold">{testimonial.name}</div>
-                  <div className="text-sm text-white/40">{testimonial.position}</div>
-                </div>
-              </div>
-              <p className="text-sm mt-4 md:text-base">{testimonial.text}</p>
+        <div className="mt-12 lg:mt-20 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
+          <div className="flex gap-8 pr-8 flex-none animate-move-left [animation-duration:2400s] hover:[animation-play-state:paused]">
+            {[...new Array(30)].fill(0).map((_, index) => (
+              <Fragment key={index}>
+                {testimonials.map(testimonial => (
+                  <Card key={testimonial.name} className="max-w-xs md:p-8 p-6 md:max-w-md hover:-rotate-3 transition duration-300">
+                    <div className="flex gap-4 items-center">
+                      <div className="size-14 bg-gray-700 inline-flex rounded-full flex-shrink-0 justify-center items-center">
+                        <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full" />
+                      </div>
+                      <div>
+                        <div className="font-semibold">{testimonial.name}</div>
+                        <div className="text-sm text-white/40">{testimonial.position}</div>
+                      </div>
+                    </div>
+                    <p className="text-sm mt-4 md:text-base">{testimonial.text}</p>
 
-            </Card>
-          ))}
+                  </Card>
+                ))}
+              </Fragment>
+            ))}
+
           </div>
         </div>
       </div>
